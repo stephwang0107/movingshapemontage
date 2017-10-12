@@ -1,0 +1,205 @@
+body {
+  background-color: rgb(242, 16, 122);
+}
+
+nav {
+  font-size: 20px;
+  color:white;
+  margin-left: 150px;
+  margin-top:5%;
+}
+
+
+h1 {
+  color: rgb(255, 161, 0);
+  margin-left: 10%;
+  margin-top: 15%;
+  margin-bottom: 5%
+}
+
+
+.line1 {
+  width:700px;
+  height:8px;
+  margin:10px;
+  margin-left: 10%;
+  background-color: #96db0a;
+  z-index: 1
+
+
+}
+
+
+.thinkingimg {
+    position:absolute;
+    left:60%;
+    top:200%;
+  }
+
+
+.square1 {
+    border:8px solid #010c77;
+    border-bottom-left-radius: 80%;
+    -moz-border-radius-bottom-left:80%;
+    -webkit-border-radius-bottom-left:80%;
+    width:600px;
+    height:900px;
+    position:absolute;
+    left:25%;
+    top:35%;
+    z-index: 3;
+
+
+    animation-name: moving ;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
+    transition: margin-bottom 2s linear;
+
+  }
+
+  @keyframes  moving {
+    0% {
+      transform:translate(0px);
+    }
+
+    50% {
+      transform:translate(200px)
+    }
+    100% {
+      transform:translate(0)
+    }
+  }
+
+
+
+
+.circle1{
+
+      border-radius:100%;
+      width:100px;
+      height:100px;
+      background-color: rgb(255, 161, 0);
+      position:absolute;
+      left:80%;
+      top:10%;
+      z-index: 5;
+      animation-name:changeBackgroundColor;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      animation-direction: alternate;
+
+    }
+    @keyframes changeBackgroundColor{
+      0%{background-color: rgb(255, 161, 0);}
+      100%{background-color: rgb(150, 219, 10);}
+
+
+
+
+    }
+
+.square2 {
+      border:8px solid #010c77;
+      width:700px;
+      height:800px;
+      position:absolute;
+      left:15%;
+      top:90%;
+      z-index: 3;
+      animation-name:BoxRotation;
+        animation-duration: 3s;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-direction: alternate;
+      }
+
+      @keyframes BoxRotation {
+        0%{transform:rotate(0deg);border-radius: 0%}
+        100%{transform:rotate(360deg);border-radius: 100%}
+      }
+
+  .container {
+
+    position: absolute;
+    top: 1500px;
+    left: 150px;
+    width: 800px;
+    height: 800px;
+  }
+  .accordianbox1{
+    background-color: orange;
+    width:150px;
+    height:300px;
+    position:absolute;
+    left:0px;
+    top:300px;
+    z-index: 5;
+    float:left;
+    transform:rotate(180deg);
+    -webkit-transition: All 1s ease-in-out;
+
+  }
+
+  .accordianbox1:hover{
+    top:0;
+    height:600px;
+  }
+  .accordianbox2{
+    background-color: orange;
+    width:150px;
+    height:300px;
+
+    position:absolute;
+    top: 0;
+    left: 400px;
+
+    z-index: 5;
+    float:left;
+    transform:rotate(180deg);
+
+    -webkit-transition: All 1s ease-in-out;
+
+  }
+
+  .accordianbox2:hover{
+    top:0;
+    height:600px;
+  }
+
+
+    .accordianbox3{
+      background-color: orange;
+      width:150px;
+      height:300px;
+
+      position:absolute;
+      top: 0;
+      left: 400px;
+
+      z-index: 5;
+      float:left;
+      transform:rotate(180deg);
+
+      -webkit-transition: All 1s ease-in-out;
+
+    }
+
+    .accordianbox3:hover{
+      top:0;
+      height:600px;
+    }
+
+
+    .triangles{
+      width:300px
+      margin-left: 50%;
+      margin-top: 2050px;
+      position:absolute;
+      z-index: 4;
+
+    }

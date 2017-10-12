@@ -1,0 +1,28 @@
+body {
+  background-color: rgb(255, 161, 0);
+  font-family: Montserrat, sans-serif;
+  font-size: 20px;
+  color:ivory;
+
+
+}
+
+nav {
+  font-size: 20px;
+  color:white;
+  margin-left: 150px;
+  margin-top:5%;
+}
+
+h1 {
+    margin-left: 10%;
+    margin-top:5%;
+    float: left;
+    z-index: 2;
+    line-height: 50px;
+
+
+}
+div{
+  margin-left: 40%;
+}
